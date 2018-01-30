@@ -1,7 +1,4 @@
-package dto;
-
-import Helper.UserConverter;
-import brugerautorisation.data.Bruger;
+package authwrapper.dto;
 
 import java.io.Serializable;
 import java.util.HashMap;

@@ -1,6 +1,6 @@
-package Helper;
+package authwrapper.helper;
 import brugerautorisation.data.Bruger;
-import dto.User;
+import authwrapper.dto.User;
 
 public class UserConverter {
     public static Bruger UserToBruger(User user) {

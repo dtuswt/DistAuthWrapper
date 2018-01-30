@@ -1,6 +1,6 @@
-package transport;
+package authwrapper.transport;
 
-import Helper.UserConverter;
+import authwrapper.helper.UserConverter;
 import brugerautorisation.transport.rmi.Brugeradmin;
 
 import java.net.MalformedURLException;
@@ -8,7 +8,7 @@ import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
-import dto.User;
+import authwrapper.dto.User;
 
 public class UserAdministration  {
     private final String lookupAddress = "rmi://javabog.dk/brugeradmin";
@@ -17,7 +17,7 @@ public class UserAdministration  {
     public UserAdministration() throws java.rmi.RemoteException, NotBoundException, MalformedURLException {
         this.ba = (Brugeradmin) Naming.lookup(lookupAddress);
     }
-    
+
     public User retrieveUser(String username, String password) throws RemoteException {
         return UserConverter.BrugerToUser(ba.hentBruger(username, password));
     }
