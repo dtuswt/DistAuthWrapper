@@ -3,9 +3,7 @@ package authwrapper.dto;
 import java.io.Serializable;
 import java.util.HashMap;
 
-public class User implements Serializable {
-    private static final long serialVersionUID = 1628165097606573316L;
-
+public class User {
     private String username;
     private String email;
     private long lastActive;
