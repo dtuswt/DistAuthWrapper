@@ -43,5 +43,4 @@ public class Diverse {
 		} catch (Exception e) { e.printStackTrace(); }
 		return sb.substring(0,sb.length()-1); // fjern sidste komma
 	}
-
 }
