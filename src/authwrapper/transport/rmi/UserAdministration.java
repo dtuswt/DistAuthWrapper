@@ -1,4 +1,4 @@
-package authwrapper.transport;
+package authwrapper.transport.rmi;
 
 import authwrapper.helper.UserConverter;
 import brugerautorisation.transport.rmi.Brugeradmin;
