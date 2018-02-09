@@ -2,7 +2,6 @@ package authwrapper.transport;
 
 import authwrapper.dto.Speed;
 import authwrapper.helper.UserAdministrationFactory;
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
