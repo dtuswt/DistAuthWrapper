@@ -60,7 +60,9 @@ public class UserAdministrationRmi implements IUserAdministration {
             ba.sendGlemtAdgangskodeEmail(username, message);
         } catch (RemoteException e) {
             throw new ConnectivityException("Lost connection to server. " + e.getMessage(), e.getCause());
-        } catch(IllegalStateException e) { /*  */}
+        } catch(IllegalStateException e) {
+            try { Thread.sleep(1500); } catch (InterruptedException e2) { /* Do nothing */ }
+        }
     }
 
     @Override

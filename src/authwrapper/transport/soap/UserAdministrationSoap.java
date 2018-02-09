@@ -48,7 +48,7 @@ public class UserAdministrationSoap implements IUserAdministration {
         try {
             ba.sendEmail(username, password, subject, body);
         } catch (ServerSOAPFaultException e) {
-            throw new AuthenticationException("Wrong username or password.");
+            try { Thread.sleep(1500); } catch (InterruptedException e2) { /* Do nothing */ }
         }
     }
 
