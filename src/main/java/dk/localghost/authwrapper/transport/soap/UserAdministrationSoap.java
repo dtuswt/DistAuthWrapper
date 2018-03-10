@@ -1,9 +1,9 @@
-package authwrapper.transport.soap;
+package dk.localghost.authwrapper.transport.soap;
 
-import authwrapper.dto.User;
-import authwrapper.helper.UserConverter;
-import authwrapper.transport.IUserAdministration;
-import authwrapper.transport.AuthenticationException;
+import dk.localghost.authwrapper.dto.User;
+import dk.localghost.authwrapper.helper.UserConverter;
+import dk.localghost.authwrapper.transport.IUserAdministration;
+import dk.localghost.authwrapper.transport.AuthenticationException;
 import brugerautorisation.transport.soap.Brugeradmin;
 import com.sun.xml.internal.ws.fault.ServerSOAPFaultException;
 

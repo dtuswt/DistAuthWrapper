@@ -1,4 +1,4 @@
-package authwrapper.transport;
+package dk.localghost.authwrapper.transport;
 
 public class ConnectivityException extends Exception {
     public ConnectivityException() {

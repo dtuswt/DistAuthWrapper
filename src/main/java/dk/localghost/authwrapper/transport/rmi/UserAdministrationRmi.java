@@ -1,9 +1,9 @@
-package authwrapper.transport.rmi;
+package dk.localghost.authwrapper.transport.rmi;
 
-import authwrapper.helper.UserConverter;
-import authwrapper.transport.ConnectivityException;
-import authwrapper.transport.IUserAdministration;
-import authwrapper.transport.AuthenticationException;
+import dk.localghost.authwrapper.helper.UserConverter;
+import dk.localghost.authwrapper.transport.ConnectivityException;
+import dk.localghost.authwrapper.transport.IUserAdministration;
+import dk.localghost.authwrapper.transport.AuthenticationException;
 import brugerautorisation.transport.rmi.Brugeradmin;
 
 import java.net.MalformedURLException;
@@ -11,10 +11,10 @@ import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 
-import authwrapper.dto.User;
+import dk.localghost.authwrapper.dto.User;
 
 public class UserAdministrationRmi implements IUserAdministration {
-    private final String lookupAddress = "rmi://javabog.dk/brugeradmin";
+    private String lookupAddress = "rmi://javabog.dk/brugeradmin";
     private Brugeradmin ba;
 
     public UserAdministrationRmi() throws java.rmi.RemoteException, NotBoundException, MalformedURLException {

@@ -1,6 +1,6 @@
-package authwrapper.transport;
+package dk.localghost.authwrapper.transport;
 
-import authwrapper.dto.User;
+import dk.localghost.authwrapper.dto.User;
 
 public interface IUserAdministration {
     User authenticateUser(String username, String password) throws AuthenticationException, ConnectivityException;

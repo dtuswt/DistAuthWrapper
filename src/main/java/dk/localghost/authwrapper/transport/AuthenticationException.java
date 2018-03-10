@@ -1,4 +1,4 @@
-package authwrapper.transport;
+package dk.localghost.authwrapper.transport;
 
 public class AuthenticationException extends Exception {
     public AuthenticationException() {

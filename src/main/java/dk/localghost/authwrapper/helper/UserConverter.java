@@ -1,6 +1,6 @@
-package authwrapper.helper;
+package dk.localghost.authwrapper.helper;
 import brugerautorisation.data.Bruger;
-import authwrapper.dto.User;
+import dk.localghost.authwrapper.dto.User;
 
 public class UserConverter {
     public static Bruger UserToBruger(User user) {

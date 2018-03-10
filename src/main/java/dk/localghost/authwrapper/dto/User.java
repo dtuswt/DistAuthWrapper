@@ -1,4 +1,4 @@
-package authwrapper.dto;
+package dk.localghost.authwrapper.dto;
 
 import java.io.Serializable;
 import java.util.HashMap;
